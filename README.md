@@ -41,4 +41,49 @@ Este projeto consiste em código CRUD com busca por ID, para um sistema de geren
 
 ## Exemplos de Requisição e Resposta
 
-1. ![ex1](ex1.png)
+1. Coloque o link do modo que está abaixo, no modo `GET`:
+![ex1](ex1.png)
+   O resultado deve aparecer deste modo:
+   ```json
+      [
+     {
+       "id": 1,
+       "item": "Notebook Dell",
+       "local": "Laboratório 01",
+       "dataRegistro": "2026-09-01",
+       "valor": 3500,
+       "patrimonio": "PAT-00125"
+     },
+     {
+       "id": 2,
+       "item": "Projetor Epson",
+       "local": "Sala 03",
+       "dataRegistro": "2026-09-03",
+       "valor": 2800,
+       "patrimonio": "PAT-00126"
+        }
+      ]
+    ```
+2. Coloque o link do modo que está abaixo, no modo `GET`:
+   ![ex2](ex2.png)
+   O resultado deve parecer deste modo:
+   ```json
+   {
+     "id": 1,
+     "item": "Notebook Dell",
+     "local": "Laboratório 01",
+     "dataRegistro": "2026-09-01",
+     "valor": 3500,
+     "patrimonio": "PAT-00125"
+   }
+   ```
+3. Coloque o link do modo I, vá em `body` -> `Form-encode` e coloque as informações contidas em II e clique "Send". O resultado deve parecer com III
+   ![ex3](ex3.png)
+4. Coloque o link do modo I, vá em `body` -> `Form-encode` e coloque as informações contidas em II e clique "Send". O resultado deve parecer com III
+   ![ex4](ex4.png)
+5. Coloque o link do modo que está abaixo, no modo `GET`:
+   ![ex2](ex2.png)
+   O resultado deve parecer deste modo:
+   ```json
+   Item deletado com sucesso.
+   ```
