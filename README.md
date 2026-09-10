@@ -85,17 +85,17 @@ Este projeto consiste em código CRUD com busca por ID, para um sistema de geren
    }
    ```
    
-3. Coloque o link do modo I, vá em `body` -> `Form-encode` e coloque as informações contidas em II e clique "Send". O resultado deve parecer com III
+3. Coloque o link do modo I, vá em `body` -> `Form-encode` e coloque as informações contidas em II, selecione o modo `POST` e clique "Send". O resultado deve parecer com III
 
    ![ex3](ex3.png)
    
-5. Coloque o link do modo I, vá em `body` -> `Form-encode` e coloque as informações contidas em II e clique "Send". O resultado deve parecer com III
+5. Coloque o link do modo I, vá em `body` -> `Form-encode` e coloque as informações contidas em II, selecione o modo `PUT` e clique "Send". O resultado deve parecer com III
 
    ![ex4](ex4.png)
    
-7. Coloque o link do modo que está abaixo, no modo `GET`:
+7. Coloque o link do modo que está abaixo, no modo `DELETE`:
 
-   ![ex2](ex2.png)
+   ![ex5](ex5.png)
 
    O resultado deve parecer deste modo:
 
