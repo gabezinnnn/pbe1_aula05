@@ -42,8 +42,11 @@ Este projeto consiste em código CRUD com busca por ID, para um sistema de geren
 ## Exemplos de Requisição e Resposta
 
 1. Coloque o link do modo que está abaixo, no modo `GET`:
+
 ![ex1](ex1.png)
+
    O resultado deve aparecer deste modo:
+   
    ```json
       [
      {
@@ -63,10 +66,14 @@ Este projeto consiste em código CRUD com busca por ID, para um sistema de geren
        "patrimonio": "PAT-00126"
         }
       ]
-    ```
+  ```
+   
 2. Coloque o link do modo que está abaixo, no modo `GET`:
+
    ![ex2](ex2.png)
+   
    O resultado deve parecer deste modo:
+   
    ```json
    {
      "id": 1,
@@ -77,13 +84,21 @@ Este projeto consiste em código CRUD com busca por ID, para um sistema de geren
      "patrimonio": "PAT-00125"
    }
    ```
+   
 3. Coloque o link do modo I, vá em `body` -> `Form-encode` e coloque as informações contidas em II e clique "Send". O resultado deve parecer com III
+
    ![ex3](ex3.png)
-4. Coloque o link do modo I, vá em `body` -> `Form-encode` e coloque as informações contidas em II e clique "Send". O resultado deve parecer com III
+   
+5. Coloque o link do modo I, vá em `body` -> `Form-encode` e coloque as informações contidas em II e clique "Send". O resultado deve parecer com III
+
    ![ex4](ex4.png)
-5. Coloque o link do modo que está abaixo, no modo `GET`:
+   
+7. Coloque o link do modo que está abaixo, no modo `GET`:
+
    ![ex2](ex2.png)
+
    O resultado deve parecer deste modo:
+
    ```json
    Item deletado com sucesso.
    ```
