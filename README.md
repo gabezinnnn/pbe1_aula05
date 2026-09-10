@@ -1,74 +1,44 @@
-# 📦 Sistema de Gerenciamento de Inventário
+# Atividade Aula 05
 
-API REST simples desenvolvida para controle e gerenciamento de itens de inventário e patrimônio. O sistema permite cadastrar, consultar, atualizar e remover itens armazenados em formato JSON.
+Atividade desafiadora proposta na aula 05 de Programação Back-Ending (PBE).
 
----
+## Descrição
 
-## 📄 Descrição do Projeto
+Este projeto consiste em código CRUD com busca por ID, para um sistema de gerenciamento de patrimônios de uma empresa.
+## Tecnologias Utilizadas
 
-Este projeto consiste em um servidor HTTP desenvolvido em Node.js e Express para gerenciar registros de inventário. Cada item possui identificador único (`id`), nome (`item`), local de alocação (`local`), data de registro (`dataRegistro`), valor estimado (`valor`) e código de patrimônio (`patrimonio`).
+- Node.js;
+- JSON;
+- VSCode;
+- Express.
 
----
-
-## 🛠️ Tecnologias Utilizadas
-
-- **Node.js**: Ambiente de execução JavaScript server-side.
-- **Express.js**: Framework para construção de APIs e rotas HTTP.
-- **JSON**: Formato para persistência e armazenamento dos dados (`inventario.json`).
-
----
-
-## 📥 Instruções para Instalação e Execução
-
-### Pré-requisitos
-- **Node.js** e **npm** instalados na sua máquina.
-
+## Instruções para Instalação e Execução
 ### Passo a Passo
 
-1. Execute o terminal na pasta raiz do projeto.
-2. Instale as dependências executando:
+1. Clone o repositório dentro da máquina e abra o VSCode nela.
+2. Com o terminal do VSCode, instale as dependências executando:
    ```bash
    npm install express
    ```
-3. Garanta que a estrutura de arquivos do projeto esteja organizada assim:
-   ```text
-   .
-   ├── inventario.json
-   └── server.js
-   ```
-4. Inicie o servidor:
+3. Inicie o servidor:
    ```bash
    node server.js
    ```
-5. O servidor estará acessível na URL: `http://localhost:3000/inventario`
+4. O servidor estará acessível na URL: `http://localhost:3000/inventario`
+5. Teste no `Thunder Client`. 
 
-> **Observação:** O middleware configurado atualmente no código é `express.urlencoded({ extended: true })`. Ao realizar requisições `POST` ou `PUT` via Postman/Insomnia, envie o corpo no formato **x-www-form-urlencoded** (ou inclua `app.use(express.json())` caso prefira requisições em formato JSON).
-
----
-
-## 🛣️ Lista das Rotas Disponíveis
-
-Base URL: `http://localhost:3000`
+## Lista das Rotas Disponíveis
 
 | Método HTTP | Rota | Descrição |
 | :--- | :--- | :--- |
-| `GET` | `/inventario` | Retorna a lista completa com todos os itens do inventário. |
-| `GET` | `/inventario/:id` | Busca e retorna um item específico com base no `id` informado. |
-| `POST` | `/inventario` | Adiciona um novo item ao inventário. |
-| `PUT` | `/inventario/:id` | Atualiza os campos de um item existente informado pelo `id`. |
-| `DELETE` | `/inventario/:id` | Remove o item especificado do inventário pelo `id`. |
+| `GET` | `/inventario` | Listagem de todos os itens no mockup. |
+| `GET` | `/inventario/id_teste` | Busca no mockup o item que tem o id mostrado no espaço `id_teste`. |
+| `POST` | `/inventario` | Adiciona um novo item ao mockup. |
+| `PUT` | `/inventario/id_teste` | Atualiza o item a partir do id mostrado no espaço `id_teste`, com as informações para trocá-lo no `body` |
+| `DELETE` | `/inventario/id_teste` | Remove o item do mockup a partir do id mostrado em `id_teste`. |
 
----
-
-### 📝 Estrutura dos Dados (`inventario.json`)
-
-```json
-{
-  "id": 1,
-  "item": "Notebook Dell",
-  "local": "Laboratório 01",
-  "dataRegistro": "2026-09-01",
-  "valor": 3500.00,
-  "patrimonio": "PAT-00125"
 }
-```
+
+## Exemplos de Requisição e Resposta
+
+1. ![ex1](ex1.png)
